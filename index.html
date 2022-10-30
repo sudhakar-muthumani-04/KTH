@@ -17,6 +17,21 @@
         padding: 10px;
         padding-top: 0px;
     }
+    
+    @media only screen and (max-width: 991px) {
+        .mobile {
+            display: block;
+        }
+        .desktop {
+            display: none;
+        }
+    }
+    
+    @media only screen and (min-width: 991px) {
+        .mobile {
+            display: none;
+        }
+    }
 </style>
 
 <body>
@@ -34,7 +49,7 @@
                             <span class="text"><a href="mailto:kthmadurai@gmail.com">kthmadurai@gmail.com</a></span>
                         </div>
                         <div class="col-md-6 pr-6 d-flex topper align-items-center text-lg-right justify-content-end">
-                            <p class="mb-0 register-link"><span>Open hours:</span> <span>Monday - Sunday</span> <span>7:00AM - 2:00PM, 6.00PM - 8.00PM</span></p>
+                            <p class="mb-0 register-link"><span>Open hours:</span> <span>Monday - Sunday</span> <span>7:00AM - 2:00PM, 6.00PM - 9.30PM</span></p>
                         </div>
                     </div>
                 </div>
@@ -60,12 +75,13 @@
 
     <section class="home-slider owl-carousel js-fullheight">
         <div class="slider-item js-fullheight" style="background-image:url(images/xbg_1.jpg.pagespeed.ic.XxXKjkuPTR.jpg)">
-            <div class="overlay"></div>
             <div class="container">
                 <div class="row slider-text js-fullheight justify-content-center align-items-center" data-scrollax-parent="true">
                     <div class="col-md-12 col-sm-12 text-center ftco-animate">
-                        <h1 class="mb-4 mt-5">Our Delicious Specialties</h1>
-                        <p><a href="#menu" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
+                        <h1 class="mb-4 mt-5">Kannan Tiffin Home</h1>
+                        <h4 style="color: white;">Dine In | Takeaway | Party Orders</h4>
+                        <p class="desktop"><a href="#menu" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3" style="background: #ffa323;">View Menu</a></p>
+                        <p class="mobile"><a href="tel:+919942086921" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Contact Us</a></p>
                     </div>
                 </div>
             </div>
@@ -584,29 +600,45 @@
                         <p style="margin-top: -20px;">At Kannan Tiffin Home we serve high quality vegetarian food and have been doing so every single day for the last 39 years. We use high quality ingredients to create healthy food that tastes just like home food.</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                             <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com/kth14/"><span class="icon-facebook"></span></a></li>
                             <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="ftco-footer-widget">
+                    <div class="ftco-footer-widget desktop">
                         <h2 class="ftco-heading-2">Open Hours</h2>
                         <ul class="list-unstyled open-hours">
-                            <li class="d-flex"><span>Monday</span><span>7:00 AM - 2:00 PM, 6:00 PM - 9:00 PM</span></li>
-                            <li class="d-flex"><span>Tuesday</span><span>7:00 AM - 2:00 PM, 6:00 PM - 9:00 PM</span></li>
-                            <li class="d-flex"><span>Wednesday</span><span>7:00 AM - 2:00 PM, 6:00 PM - 9:00 PM</span></li>
-                            <li class="d-flex"><span>Thursday</span><span>7:00 AM - 2:00 PM, 6:00 PM - 9:00 PM</span></li>
-                            <li class="d-flex"><span>Friday</span><span>7:00 AM - 2:00 PM, 6:00 PM - 9:00 PM</span></li>
-                            <li class="d-flex"><span>Saturday</span><span>7:00 AM - 2:00 PM, 6:00 PM - 9:00 PM</span></li>
-                            <li class="d-flex"><span>Sunday</span><span> 7:00 AM - 2:00 PM, 6:00 PM - 9:00 PM</span></li>
+                            <li class="d-flex"><span>Monday</span><span>7:00 AM - 2:00 PM, 6:00 PM - 9:30 PM</span></li>
+                            <li class="d-flex"><span>Tuesday</span><span>7:00 AM - 2:00 PM, 6:00 PM - 9:30 PM</span></li>
+                            <li class="d-flex"><span>Wednesday</span><span>7:00 AM - 2:00 PM, 6:00 PM - 9:30 PM</span></li>
+                            <li class="d-flex"><span>Thursday</span><span>7:00 AM - 2:00 PM, 6:00 PM - 9:30 PM</span></li>
+                            <li class="d-flex"><span>Friday</span><span>7:00 AM - 2:00 PM, 6:00 PM - 9:30 PM</span></li>
+                            <li class="d-flex"><span>Saturday</span><span>7:00 AM - 2:00 PM, 6:00 PM - 9:30 PM</span></li>
+                            <li class="d-flex"><span>Sunday</span><span> 7:00 AM - 2:00 PM, 6:00 PM - 9:30 PM</span></li>
+                        </ul>
+                    </div>
+                    <div class="ftco-footer-widget mobile">
+                        <h2 class="ftco-heading-2">Open Hours</h2>
+                        <ul class="list-unstyled open-hours">
+                            <li class="d-flex"><span>Monday</span><span>7:00 AM - 2:00 PM<br>6:00 PM - 9:30 PM</span></li>
+                            <li class="d-flex"><span>Tuesday</span><span>7:00 AM - 2:00 PM<br>6:00 PM - 9:30 PM</span></li>
+                            <li class="d-flex"><span>Wednesday</span><span>7:00 AM - 2:00 PM<br>6:00 PM - 9:30 PM</span></li>
+                            <li class="d-flex"><span>Thursday</span><span>7:00 AM - 2:00 PM<br>6:00 PM - 9:30 PM</span></li>
+                            <li class="d-flex"><span>Friday</span><span>7:00 AM - 2:00 PM<br>6:00 PM - 9:30 PM</span></li>
+                            <li class="d-flex"><span>Saturday</span><span>7:00 AM - 2:00 PM<br>6:00 PM - 9:30 PM</span></li>
+                            <li class="d-flex"><span>Sunday</span><span> 7:00 AM - 2:00 PM<br>6:00 PM - 9:30 PM</span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-2">
-                    <div class="ftco-footer-widget">
+                    <div class="ftco-footer-widget desktop">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.8056472943717!2d78.12489691479372!3d9.950122592885393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5e69c53ae1b%3A0xed7d8438b2a3e647!2sKannan%20Tiffin%20Home!5e0!3m2!1sen!2sin!4v1667050674255!5m2!1sen!2sin"
                             width="225" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="ftco-footer-widget mobile" style="margin:20px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.8056472943717!2d78.12489691479372!3d9.950122592885393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5e69c53ae1b%3A0xed7d8438b2a3e647!2sKannan%20Tiffin%20Home!5e0!3m2!1sen!2sin!4v1667050674255!5m2!1sen!2sin"
+                            width="330" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -671,6 +703,21 @@
     </script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/635e434cb0d6371309cc482d/1ggk3dpji';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 
 </html>
